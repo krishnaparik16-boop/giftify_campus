@@ -94,7 +94,20 @@ function closeModal(id){document.getElementById(id).classList.remove("show")}
 function overlayClose(e,id){if(e.target.id===id)closeModal(id)}
 function escapeHTML(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function toast(msg){let t=document.getElementById("toast");if(!t){t=document.createElement("div");t.id="toast";t.style.cssText="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#17212b;color:white;padding:12px 18px;border-radius:9px;z-index:50";document.body.appendChild(t)}t.textContent=msg;t.style.display="block";clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.style.display="none",1800)}
-document.getElementById("orderForm").addEventListener("submit",function(e){e.preventDefault();if(!cart.length){alert("Your cart is empty.");return}const name=document.getElementById("customerName").value.trim(),phone=document.getElementById("phone").value.trim(),email=document.getElementById("email").value.trim(),delivery=document.getElementById("delivery").value.trim(),notes=document.getElementById("customNotes").value.trim(),payment=document.getElementById("payment").value;const orderId="GC"+Date.now().toString().slice(-7);const items=cart.map(x=>{const p=products.find(p=>p.id===x.id);return `${p.name} × ${x.qty} — ${rupees(p.price*x.qty)}${x.notes?" (custom: "+x.notes+")":""}`}).join("\n");const summary=`GIFTIFY CAMPUS ORDER\nOrder reference: ${orderId}\nName: ${name}\nMobile: ${phone}\nEmail: ${email||"Not provided"}\nDelivery/collection: ${delivery}\nPersonalization notes: ${notes||"None"}\n\n${items}\n\nTOTAL: ${rupees(total())}\nPayment preference: ${payment}\n\nPlease confirm availability, final price, delivery/collection time, and payment with Giftify Campus.`;const result=document.getElementById("orderResult");result.innerHTML=`<div class="notice"><b>Order summary created: ${orderId}</b><br>This order has not been sent to the business and payment has not been verified. Copy the summary and send it to Giftify Campus to confirm your order.</div><textarea id="summaryText" style="width:100%;min-height:220px;padding:12px;border:1px solid #d7dce2;border-radius:8px"></textarea><button class="primary full" type="button" id="copyOrder" style="margin-top:10px">Copy order summary</button><p style="font-size:12px;color:#667085">For live ordering, connect a backend/order database and a verified payment gateway. Do not rely on a screenshot or a UPI link as proof of payment.</p>`;document.getElementById("summaryText").value=summary;document.getElementById("copyOrder").onclick=async()=>{try{await navigator.clipboard.writeText(summary);toast("Order summary copied")}catch(err){document.getElementById("summaryText").select();document.execCommand("copy");toast("Order summary copied")}};
+document.getElementById("orderForm").addEventListener("submit",function(e){e.preventDefault();if(!cart.length){alert("Your cart is empty.");return}const name=document.getElementById("customerName").value.trim(),phone=document.getElementById("phone").value.trim(),email=document.getElementById("email").value.trim(),delivery=document.getElementById("delivery").value.trim(),notes=document.getElementById("customNotes").value.trim(),payment=document.getElementById("payment").value;const orderId="GC"+Date.now().toString().slice(-7);const items=cart.map(x=>{const p=products.find(p=>p.id===x.id);return `${p.name} × ${x.qty} — ${rupees(p.price*x.qty)}${x.notes?" (custom: "+x.notes+")":""}`}).join("\n");const summary=`GIFTIFY CAMPUS ORDER\nOrder reference: ${orderId}\nName: ${name}\nMobile: ${phone}\nEmail: ${email||"Not provided"}\nDelivery/collection: ${delivery}\nPersonalization notes: ${notes||"None"}\n\n${items}\n\nTOTAL: ${rupees(total())}\nPayment preference: ${payment}\n\nPlease confirm availability, final price, delivery/collection time, and payment with Giftify Campus.`;const result=document.getElementById("orderResult");result.innerHTML=`<div class="notice"><b>Order summary created: ${orderId}</b><br>This order has not been sent to the business and payment has not been verified. Copy the summary and send it to Giftify Campus to confirm your order.</div><textarea id="summaryText" style="width:100%;min-height:220px;padding:12px;border:1px solid #d7dce2;border-radius:8px"></textarea><button class="primary full" type="button" id="copyOrder" style="margin-top:10px">Copy order summary</button><p style="font-size:12px;color:#667085">For live ordering, connect a backend/order database and a verified payment gateway. Do not rely on a screenshot or a UPI link as proof of payment.<button class="primary full" type="button"
+  id="sendWhatsApp" style="margin-top:10px">
+  Send Order to WhatsApp
+</button></p>`;document.getElementById("summaryText").value=summary;
+const BUSINESS_WHATSAPP = "919876543210"; // Replace with your number
+
+document.getElementById("sendWhatsApp").onclick = function () {
+  const whatsappURL =
+    "https://wa.me/" + BUSINESS_WHATSAPP +
+    "?text=" + encodeURIComponent(summary);
+
+  window.open(whatsappURL, "_blank");
+};
+document.getElementById("copyOrder").onclick=async()=>{try{await navigator.clipboard.writeText(summary);toast("Order summary copied")}catch(err){document.getElementById("summaryText").select();document.execCommand("copy");toast("Order summary copied")}};
 const BUSINESS_WHATSAPP = "918855821377";
 
 const whatsappURL =
@@ -115,4 +128,29 @@ document.getElementById("orderForm").classList.add("hidden");result.classList.re
 document.getElementById("searchInput").addEventListener("keydown",e=>{if(e.key==="Enter")renderProducts()});document.getElementById("year").textContent=new Date().getFullYear();renderProducts();updateCart();
 </script>
 </body>
+
+<!-- Your existing website code above -->
+
+<section class="payment-section">
+  <h2>Pay GIFTIFY CAMPUS</h2>
+  <p>Scan the UPI QR code using any UPI payment app.</p>
+  <p><strong>UPI ID:</strong> 8855821377-2@ybl</p>
+
+  <a
+    class="primary full"
+    href="upi://pay?pa=8855821377-2%40ybl&amp;pn=GIFTIFY%20CAMPUS&amp;cu=INR"
+    style="display:block;text-align:center;text-decoration:none;padding:12px"
+  >
+    Pay using UPI app
+  </a>
+
+  <p>
+    Confirm the order total before paying. Payment must be verified
+    before fulfilling an order.
+  </p>
+</section>
+
+</body>
+</html>
+
 </html>
