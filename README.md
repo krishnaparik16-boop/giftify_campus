@@ -131,7 +131,7 @@ document.getElementById("searchInput").addEventListener("keydown",e=>{if(e.key==
 
 <!-- Your existing website code above -->
 
-<section class="payment-section">
+
   <h2>Pay GIFTIFY CAMPUS</h2>
   <p>Scan the UPI QR code using any UPI payment app.</p>
   <p><strong>UPI ID:</strong> 8855821377-2@ybl</p>
