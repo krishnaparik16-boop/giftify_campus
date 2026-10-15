@@ -73,7 +73,33 @@
 <div class="benefits"><div class="benefit"><span style="font-size:27px">💝</span><b>Made personal</b><p>Add a name, photo, or message to make your gift feel truly yours. Confirm custom details before production.</p></div><div class="benefit"><span style="font-size:27px">📦</span><b>Pre-order friendly</b><p>Orders are made after confirmation. Delivery and collection dates should be confirmed with you before payment.</p></div><div class="benefit"><span style="font-size:27px">🔒</span><b>Clear checkout</b><p>Review your products, custom details, delivery information, and total before you place an order.</p></div></div>
 </section>
 </main>
-<footer class="footer" id="contact"><div class="footer-inner"><div><div class="logo">🎁 GIFTIFY<span>C A M P U S</span></div><p>Where Every Gift Becomes a Memory.<br>Customize it. Pre-order it. Gift it.</p></div><div><b>Contact & social</b><p>Instagram: <a href="https://www.instagram.com/giftifycampus/" target="_blank" rel="noopener">@giftifycampus</a><br>Order support: Replace this line with your business contact<br>© <span id="year"></span> Giftify Campus</p></div></div></footer>
+<footer class="footer" id="contact"><div class="footer-inner"><div><div class="logo">🎁 GIFTIFY<span>C A M P U S</span></div><p>Where Every Gift Becomes a Memory.<br>Customize it. Pre-order it. Gift it.</p></div><div><b>Contact & social</b><p>Instagram: <a href="https://www.instagram.com/giftifycampus/" target="_blank" rel="noopener">@giftifycampus</a><br>Order support: ```html
+<div class="footer-contact">
+  <h3>Contact &amp; Social</h3>
+
+  <p>
+    Instagram:
+    <a href="https://www.instagram.com/giftifycampus/"
+       target="_blank" rel="noopener noreferrer">
+      @giftifycampus
+    </a>
+  </p>
+
+  <p>
+    Order Support:
+    <a href="tel:+918855821377">+91 88558 21377</a>
+  </p>
+
+  <p>
+    <a href="https://wa.me/918855821377"
+       target="_blank" rel="noopener noreferrer">
+      Chat with us on WhatsApp
+    </a>
+  </p>
+
+  <p>&copy; 2026 Giftify Campus. All rights reserved.</p>
+</div>
+```<br>© <span id="year"></span> Giftify Campus</p></div></div></footer>
 
 <div class="overlay" id="cartOverlay" onclick="overlayClose(event,'cartOverlay')"><div class="modal"><div class="modal-head"><h2>Your shopping cart</h2><button class="close" onclick="closeModal('cartOverlay')">×</button></div><div id="cartItems"></div><div class="total"><span>Total</span><span id="cartTotal">₹0</span></div><button class="primary full" onclick="openCheckout()">Continue to checkout</button></div></div>
 <div class="overlay" id="checkoutOverlay" onclick="overlayClose(event,'checkoutOverlay')"><div class="modal"><div class="modal-head"><h2>Checkout</h2><button class="close" onclick="closeModal('checkoutOverlay')">×</button></div>
