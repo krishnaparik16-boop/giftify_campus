@@ -128,29 +128,6 @@ document.getElementById("orderForm").classList.add("hidden");result.classList.re
 document.getElementById("searchInput").addEventListener("keydown",e=>{if(e.key==="Enter")renderProducts()});document.getElementById("year").textContent=new Date().getFullYear();renderProducts();updateCart();
 </script>
 </body>
-
-<!-- Your existing website code above -->
-
-
-  <h2>Pay GIFTIFY CAMPUS</h2>
-  <p>Scan the UPI QR code using any UPI payment app.</p>
-  <p><strong>UPI ID:</strong> 8855821377-2@ybl</p>
-
-  <a
-    class="primary full"
-    href="upi://pay?pa=8855821377-2%40ybl&amp;pn=GIFTIFY%20CAMPUS&amp;cu=INR"
-    style="display:block;text-align:center;text-decoration:none;padding:12px"
-  >
-    Pay using UPI app
-  </a>
-
-  <p>
-    Confirm the order total before paying. Payment must be verified
-    before fulfilling an order.
-  </p>
-</section>
-
-</body>
 </html>
 
 </html>
