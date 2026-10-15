@@ -104,11 +104,15 @@
 
 <div class="overlay" id="cartOverlay" onclick="overlayClose(event,'cartOverlay')"><div class="modal"><div class="modal-head"><h2>Your shopping cart</h2><button class="close" onclick="closeModal('cartOverlay')">×</button></div><div id="cartItems"></div><div class="total"><span>Total</span><span id="cartTotal">₹0</span></div><button class="primary full" onclick="openCheckout()">Continue to checkout</button></div></div>
 <div class="overlay" id="checkoutOverlay" onclick="overlayClose(event,'checkoutOverlay')"><div class="modal"><div class="modal-head"><h2>Checkout</h2><button class="close" onclick="closeModal('checkoutOverlay')">×</button></div>
-<div class="notice"><p class="notice">
-  This starter website does not verify payments or automatically save orders.
-  Confirm your UPI ID, delivery/collection process, and payment with your customer before fulfilling an order.
-</p>
+```html
+<div class="notice">
+  <strong>Order &amp; Payment Information</strong><br>
+  Thank you for choosing Giftify Campus! Please submit your order details
+  and send your order summary to us on WhatsApp.
+  We will confirm product availability, final pricing, payment, and
+  delivery or collection details with you.
 </div>
+```
 <form id="orderForm">
 <div class="field"><label for="customerName">Full name *</label><input id="customerName" required autocomplete="name" placeholder="Your name"></div>
 <div class="field"><label for="phone">Mobile number *</label><input id="phone" required inputmode="tel" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number"></div>
