@@ -116,3 +116,20 @@ document.getElementById("orderForm").classList.add("hidden");result.classList.re
 document.getElementById("searchInput").addEventListener("keydown",e=>{if(e.key==="Enter")renderProducts()});document.getElementById("year").textContent=new Date().getFullYear();renderProducts();updateCart();
 </script>
 </body>
+
+<!-- Giftify Campus PhonePe QR Payment -->
+<section style="text-align:center; padding:30px 15px; margin:25px auto; max-width:500px; border:1px solid #eee; border-radius:16px;">
+  <h2>Pay via PhonePe / UPI</h2>
+  <p>Scan this QR code to pay for your order.</p>
+
+  <img
+    src="phonepe-qr.jpeg"
+    alt="PhonePe QR code for Giftify Campus"
+    style="width:260px; max-width:100%; height:auto;"
+  >
+
+  <p><strong>UPI Payment</strong></p>
+  <p>After paying, please share your payment confirmation.</p>
+</section>
+</body>
+
