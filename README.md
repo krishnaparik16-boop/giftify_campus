@@ -15,57 +15,57 @@
 <body>
 <div class="top-strip">✨ Your Moment. Your Memories. Your Gift. &nbsp; | &nbsp; Made personal, made memorable.</div>
 <header class="header">
-  <div class="header-inner">
-    <a href="#" style="text-decoration:none;color:inherit"><div class="logo">🎁 GIFTIFY<span>C A M P U S</span></div></a>
-    <div class="search"><input id="searchInput" placeholder="Search gifts, products..." aria-label="Search products"><button onclick="renderProducts()">Search</button></div>
-    <div class="header-actions"><button class="secondary" onclick="openCheckout()">Checkout</button><button class="primary" onclick="openCart()">🛒 Cart <span class="cart-count" id="cartCount">0</span></button></div>
-  </div>
-  <nav class="nav"><a href="#home">Home</a><a href="#shop">All Products</a><a href="#shop" onclick="setCategory('Personalized')">Personalized Gifts</a><a href="#shop" onclick="setCategory('Accessories')">Accessories</a><a href="#shop" onclick="setCategory('Apparel')">Apparel</a><a href="#why">Why Giftify?</a><a href="#contact">Contact</a></nav>
+<div class="header-inner">
+<a href="#" style="text-decoration:none;color:inherit"><div class="logo">🎁 GIFTIFY<span>C A M P U S</span></div></a>
+<div class="search"><input id="searchInput" placeholder="Search gifts, products..." aria-label="Search products"><button onclick="renderProducts()">Search</button></div>
+<div class="header-actions"><button class="secondary" onclick="openCheckout()">Checkout</button><button class="primary" onclick="openCart()">🛒 Cart <span class="cart-count" id="cartCount">0</span></button></div>
+</div>
+<nav class="nav"><a href="#home">Home</a><a href="#shop">All Products</a><a href="#shop" onclick="setCategory('Personalized')">Personalized Gifts</a><a href="#shop" onclick="setCategory('Accessories')">Accessories</a><a href="#shop" onclick="setCategory('Apparel')">Apparel</a><a href="#why">Why Giftify?</a><a href="#contact">Contact</a></nav>
 </header>
 <main>
 <section class="hero" id="home">
- <div><div class="eyebrow">Pre-order personalized gifts</div><h1>Small gifts.<br>Big feelings.</h1><p>Turn your favourite moments into something you can hold, wear, and gift. Made for campus life and every special occasion.</p><button class="primary" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Shop gifts →</button></div>
- <div class="hero-art" aria-label="Gift illustrations">🖼️ &nbsp; ☕<br>🎀 &nbsp; 🎁<small>PERSONALIZE • PRE-ORDER • GIFT</small></div>
+<div><div class="eyebrow">Pre-order personalized gifts</div><h1>Small gifts.<br>Big feelings.</h1><p>Turn your favourite moments into something you can hold, wear, and gift. Made for campus life and every special occasion.</p><button class="primary" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Shop gifts →</button></div>
+<div class="hero-art" aria-label="Gift illustrations">🖼️ &nbsp; ☕<br>🎀 &nbsp; 🎁<small>PERSONALIZE • PRE-ORDER • GIFT</small></div>
 </section>
 <section class="wrap">
- <div class="section-head"><div><h2>Shop by category</h2><p>Find the perfect little something.</p></div></div>
- <div class="categories">
-  <button class="cat" onclick="setCategory('Personalized')"><b>🖼️</b><span>Photo Frames</span></button>
-  <button class="cat" onclick="setCategory('Personalized')"><b>☕</b><span>Mugs</span></button>
-  <button class="cat" onclick="setCategory('Accessories')"><b>🔑</b><span>Keychains</span></button>
-  <button class="cat" onclick="setCategory('Apparel')"><b>👕</b><span>T-Shirts</span></button>
-  <button class="cat" onclick="setCategory('Gifting')"><b>🎁</b><span>Gift Hampers</span></button>
-  <button class="cat" onclick="setCategory('Accessories')"><b>📓</b><span>Stationery & More</span></button>
- </div>
+<div class="section-head"><div><h2>Shop by category</h2><p>Find the perfect little something.</p></div></div>
+<div class="categories">
+<button class="cat" onclick="setCategory('Personalized')"><b>🖼️</b><span>Photo Frames</span></button>
+<button class="cat" onclick="setCategory('Personalized')"><b>☕</b><span>Mugs</span></button>
+<button class="cat" onclick="setCategory('Accessories')"><b>🔑</b><span>Keychains</span></button>
+<button class="cat" onclick="setCategory('Apparel')"><b>👕</b><span>T-Shirts</span></button>
+<button class="cat" onclick="setCategory('Gifting')"><b>🎁</b><span>Gift Hampers</span></button>
+<button class="cat" onclick="setCategory('Accessories')"><b>📓</b><span>Stationery & More</span></button>
+</div>
 </section>
 <section class="wrap" id="shop">
- <div class="section-head"><div><h2>Discover your next favourite gift</h2><p>Demo products and prices — edit them to match your actual catalogue.</p></div></div>
- <div class="filters">
-  <button class="filter active" onclick="setCategory('All',this)">All gifts</button><button class="filter" onclick="setCategory('Personalized',this)">Personalized</button><button class="filter" onclick="setCategory('Accessories',this)">Accessories</button><button class="filter" onclick="setCategory('Apparel',this)">Apparel</button><button class="filter" onclick="setCategory('Gifting',this)">Gift hampers</button>
- </div>
- <div class="products" id="products"></div>
+<div class="section-head"><div><h2>Discover your next favourite gift</h2><p>Demo products and prices — edit them to match your actual catalogue.</p></div></div>
+<div class="filters">
+<button class="filter active" onclick="setCategory('All',this)">All gifts</button><button class="filter" onclick="setCategory('Personalized',this)">Personalized</button><button class="filter" onclick="setCategory('Accessories',this)">Accessories</button><button class="filter" onclick="setCategory('Apparel',this)">Apparel</button><button class="filter" onclick="setCategory('Gifting',this)">Gift hampers</button>
+</div>
+<div class="products" id="products"></div>
 </section>
 <section class="wrap" id="why">
- <div class="section-head"><div><h2>The Giftify promise</h2><p>A simple campus-first gifting experience.</p></div></div>
- <div class="benefits"><div class="benefit"><span style="font-size:27px">💝</span><b>Made personal</b><p>Add a name, photo, or message to make your gift feel truly yours. Confirm custom details before production.</p></div><div class="benefit"><span style="font-size:27px">📦</span><b>Pre-order friendly</b><p>Orders are made after confirmation. Delivery and collection dates should be confirmed with you before payment.</p></div><div class="benefit"><span style="font-size:27px">🔒</span><b>Clear checkout</b><p>Review your products, custom details, delivery information, and total before you place an order.</p></div></div>
+<div class="section-head"><div><h2>The Giftify promise</h2><p>A simple campus-first gifting experience.</p></div></div>
+<div class="benefits"><div class="benefit"><span style="font-size:27px">💝</span><b>Made personal</b><p>Add a name, photo, or message to make your gift feel truly yours. Confirm custom details before production.</p></div><div class="benefit"><span style="font-size:27px">📦</span><b>Pre-order friendly</b><p>Orders are made after confirmation. Delivery and collection dates should be confirmed with you before payment.</p></div><div class="benefit"><span style="font-size:27px">🔒</span><b>Clear checkout</b><p>Review your products, custom details, delivery information, and total before you place an order.</p></div></div>
 </section>
 </main>
 <footer class="footer" id="contact"><div class="footer-inner"><div><div class="logo">🎁 GIFTIFY<span>C A M P U S</span></div><p>Where Every Gift Becomes a Memory.<br>Customize it. Pre-order it. Gift it.</p></div><div><b>Contact & social</b><p>Instagram: <a href="https://www.instagram.com/giftifycampus/" target="_blank" rel="noopener">@giftifycampus</a><br>Order support: Replace this line with your business contact<br>© <span id="year"></span> Giftify Campus</p></div></div></footer>
 
 <div class="overlay" id="cartOverlay" onclick="overlayClose(event,'cartOverlay')"><div class="modal"><div class="modal-head"><h2>Your shopping cart</h2><button class="close" onclick="closeModal('cartOverlay')">×</button></div><div id="cartItems"></div><div class="total"><span>Total</span><span id="cartTotal">₹0</span></div><button class="primary full" onclick="openCheckout()">Continue to checkout</button></div></div>
 <div class="overlay" id="checkoutOverlay" onclick="overlayClose(event,'checkoutOverlay')"><div class="modal"><div class="modal-head"><h2>Checkout</h2><button class="close" onclick="closeModal('checkoutOverlay')">×</button></div>
- <div class="notice">This starter website does not verify payments or automatically save orders. Confirm your UPI ID, delivery/collection process, and payment with your customer before fulfilling an order.</div>
- <form id="orderForm">
-  <div class="field"><label for="customerName">Full name *</label><input id="customerName" required autocomplete="name" placeholder="Your name"></div>
-  <div class="field"><label for="phone">Mobile number *</label><input id="phone" required inputmode="tel" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number"></div>
-  <div class="field"><label for="email">Email (optional)</label><input id="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
-  <div class="field"><label for="delivery">Delivery / collection details *</label><textarea id="delivery" required placeholder="College / hostel / pickup point and any useful directions"></textarea></div>
-  <div class="field"><label for="customNotes">Personalization instructions (optional)</label><textarea id="customNotes" placeholder="Name, photo details, colour, message, etc."></textarea></div>
-  <div class="field"><label for="payment">Payment preference</label><select id="payment"><option value="UPI">UPI (Google Pay / PhonePe / Paytm / BHIM)</option><option value="COD">Pay on collection (if you offer it)</option></select></div>
-  <div class="total"><span>Order total</span><span id="checkoutTotal">₹0</span></div>
-  <button class="primary full" type="submit">Create order summary</button>
- </form>
- <div id="orderResult" class="hidden"></div>
+<div class="notice">This starter website does not verify payments or automatically save orders. Confirm your UPI ID, delivery/collection process, and payment with your customer before fulfilling an order.</div>
+<form id="orderForm">
+<div class="field"><label for="customerName">Full name *</label><input id="customerName" required autocomplete="name" placeholder="Your name"></div>
+<div class="field"><label for="phone">Mobile number *</label><input id="phone" required inputmode="tel" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number"></div>
+<div class="field"><label for="email">Email (optional)</label><input id="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+<div class="field"><label for="delivery">Delivery / collection details *</label><textarea id="delivery" required placeholder="College / hostel / pickup point and any useful directions"></textarea></div>
+<div class="field"><label for="customNotes">Personalization instructions (optional)</label><textarea id="customNotes" placeholder="Name, photo details, colour, message, etc."></textarea></div>
+<div class="field"><label for="payment">Payment preference</label><select id="payment"><option value="UPI">UPI (Google Pay / PhonePe / Paytm / BHIM)</option><option value="COD">Pay on collection (if you offer it)</option></select></div>
+<div class="total"><span>Order total</span><span id="checkoutTotal">₹0</span></div>
+<button class="primary full" type="submit">Create order summary</button>
+</form>
+<div id="orderResult" class="hidden"></div>
 </div></div>
 <script>
 const products=[
@@ -94,20 +94,8 @@ function closeModal(id){document.getElementById(id).classList.remove("show")}
 function overlayClose(e,id){if(e.target.id===id)closeModal(id)}
 function escapeHTML(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function toast(msg){let t=document.getElementById("toast");if(!t){t=document.createElement("div");t.id="toast";t.style.cssText="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#17212b;color:white;padding:12px 18px;border-radius:9px;z-index:50";document.body.appendChild(t)}t.textContent=msg;t.style.display="block";clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.style.display="none",1800)}
-document.getElementById("orderForm").addEventListener("submit",function(e){e.preventDefault();if(!cart.length){alert("Your cart is empty.");return}const name=document.getElementById("customerName").value.trim(),phone=document.getElementById("phone").value.trim(),email=document.getElementById("email").value.trim(),delivery=document.getElementById("delivery").value.trim(),notes=document.getElementById("customNotes").value.trim(),payment=document.getElementById("payment").value;const orderId="GC"+Date.now().toString().slice(-7);const items=cart.map(x=>{const p=products.find(p=>p.id===x.id);return `${p.name} × ${x.qty} — ${rupees(p.price*x.qty)}${x.notes?" (custom: "+x.notes+")":""}`}).join("\n");const summary=`GIFTIFY CAMPUS ORDER\nOrder reference: ${orderId}\nName: ${name}\nMobile: ${phone}\nEmail: ${email||"Not provided"}\nDelivery/collection: ${delivery}\nPersonalization notes: ${notes||"None"}\n\n${items}\n\nTOTAL: ${rupees(total())}\nPayment preference: ${payment}\n\nPlease confirm availability, final price, delivery/collection time, and payment with Giftify Campus.`;const result=document.getElementById("orderResult");result.innerHTML=`<div class="notice"><b>Order summary created: ${orderId}</b><br>This order has not been sent to the business and payment has not been verified. Copy the summary and send it to Giftify Campus to confirm your order.</div><textarea id="summaryText" style="width:100%;min-height:220px;padding:12px;border:1px solid #d7dce2;border-radius:8px"></textarea><button class="primary full" type="button" id="copyOrder" style="margin-top:10px">Copy order summary</button><p style="font-size:12px;color:#667085">For live ordering, connect a backend/order database and a verified payment gateway. Do not rely on a screenshot or a UPI link as proof of payment.<button class="primary full" type="button"
-  id="sendWhatsApp" style="margin-top:10px">
-  Send Order to WhatsApp
-</button></p>`;document.getElementById("summaryText").value=summary;
-const BUSINESS_WHATSAPP = "919876543210"; // Replace with your number
-
-document.getElementById("sendWhatsApp").onclick = function () {
-  const whatsappURL =
-    "https://wa.me/" + BUSINESS_WHATSAPP +
-    "?text=" + encodeURIComponent(summary);
-
-  window.open(whatsappURL, "_blank");
-};
-document.getElementById("copyOrder").onclick=async()=>{try{await navigator.clipboard.writeText(summary);toast("Order summary copied")}catch(err){document.getElementById("summaryText").select();document.execCommand("copy");toast("Order summary copied")}};
+document.getElementById("orderForm").addEventListener("submit",function(e){e.preventDefault();if(!cart.length){alert("Your cart is empty.");return}const name=document.getElementById("customerName").value.trim(),phone=document.getElementById("phone").value.trim(),email=document.getElementById("email").value.trim(),delivery=document.getElementById("delivery").value.trim(),notes=document.getElementById("customNotes").value.trim(),payment=document.getElementById("payment").value;const orderId="GC"+Date.now().toString().slice(-7);const items=cart.map(x=>{const p=products.find(p=>p.id===x.id);return `${p.name} × ${x.qty} — ${rupees(p.price*x.qty)}${x.notes?" (custom: "+x.notes+")":""}`}).join("\n");const summary=`GIFTIFY CAMPUS ORDER\nOrder reference: ${orderId}\nName: ${name}\nMobile: ${phone}\nEmail: ${email||"Not provided"}\nDelivery/collection: ${delivery}\nPersonalization notes: ${notes||"None"}\n\n${items}\n\nTOTAL: ${rupees(total())}\nPayment preference: ${payment}\n\nPlease confirm availability, final price, delivery/collection time, and payment with Giftify Campus.`;const result=document.getElementById("orderResult");result.innerHTML=`<div class="notice"><b>Order summary created: ${orderId}</b><br>This order has not been sent to the business and payment has not been verified. Copy the summary and send it to Giftify Campus to confirm your order.</div><textarea id="summaryText" style="width:100%;min-height:220px;padding:12px;border:1px solid #d7dce2;border-radius:8px"></textarea><button class="primary full" type="button" id="copyOrder" style="margin-top:10px">Copy order summary</button><p style="font-size:12px;color:#667085">For live ordering, connect a backend/order database and a verified payment gateway. Do not rely on a screenshot or a UPI link as proof of payment.</p>`;document.getElementById("summaryText").value=summary;document.getElementById("copyOrder").onclick=async()=>{try{await navigator.clipboard.writeText(summary);toast("Order summary copied")}catch(err){document.getElementById("summaryText").select();document.execCommand("copy");toast("Order summary copied")}};document.getElementById("orderForm").classList.add("hidden");result.classList.remove("hidden");});
+document.getElementById("orderForm").addEventListener("submit",function(e){e.preventDefault();if(!cart.length){alert("Your cart is empty.");return}const name=document.getElementById("customerName").value.trim(),phone=document.getElementById("phone").value.trim(),email=document.getElementById("email").value.trim(),delivery=document.getElementById("delivery").value.trim(),notes=document.getElementById("customNotes").value.trim(),payment=document.getElementById("payment").value;const orderId="GC"+Date.now().toString().slice(-7);const items=cart.map(x=>{const p=products.find(p=>p.id===x.id);return `${p.name} × ${x.qty} — ${rupees(p.price*x.qty)}${x.notes?" (custom: "+x.notes+")":""}`}).join("\n");const summary=`GIFTIFY CAMPUS ORDER\nOrder reference: ${orderId}\nName: ${name}\nMobile: ${phone}\nEmail: ${email||"Not provided"}\nDelivery/collection: ${delivery}\nPersonalization notes: ${notes||"None"}\n\n${items}\n\nTOTAL: ${rupees(total())}\nPayment preference: ${payment}\n\nPlease confirm availability, final price, delivery/collection time, and payment with Giftify Campus.`;const result=document.getElementById("orderResult");result.innerHTML=`<div class="notice"><b>Order summary created: ${orderId}</b><br>This order has not been sent to the business and payment has not been verified. Copy the summary and send it to Giftify Campus to confirm your order.</div><textarea id="summaryText" style="width:100%;min-height:220px;padding:12px;border:1px solid #d7dce2;border-radius:8px"></textarea><button class="primary full" type="button" id="copyOrder" style="margin-top:10px">Copy order summary</button><p style="font-size:12px;color:#667085">For live ordering, connect a backend/order database and a verified payment gateway. Do not rely on a screenshot or a UPI link as proof of payment.</p>`;document.getElementById("summaryText").value=summary;document.getElementById("copyOrder").onclick=async()=>{try{await navigator.clipboard.writeText(summary);toast("Order summary copied")}catch(err){document.getElementById("summaryText").select();document.execCommand("copy");toast("Order summary copied")}};
 const BUSINESS_WHATSAPP = "918855821377";
 
 const whatsappURL =
@@ -128,6 +116,3 @@ document.getElementById("orderForm").classList.add("hidden");result.classList.re
 document.getElementById("searchInput").addEventListener("keydown",e=>{if(e.key==="Enter")renderProducts()});document.getElementById("year").textContent=new Date().getFullYear();renderProducts();updateCart();
 </script>
 </body>
-</html>
-
-</html>
