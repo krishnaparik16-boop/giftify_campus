@@ -74,36 +74,41 @@
 </section>
 </main>
 <footer class="footer" id="contact"><div class="footer-inner"><div><div class="logo">🎁 GIFTIFY<span>C A M P U S</span></div><p>Where Every Gift Becomes a Memory.<br>Customize it. Pre-order it. Gift it.</p></div><div><b>Contact & social</b><p>Instagram: <a href="https://www.instagram.com/giftifycampus/" target="_blank" rel="noopener">@giftifycampus</a><br>Order support: ```html
+```html
 <div class="footer-contact">
   <h3>Contact &amp; Social</h3>
 
   <p>
     Instagram:
-    <a href="https://www.instagram.com/giftifycampus/"
-       target="_blank" rel="noopener noreferrer">
+    <a href="https://www.instagram.com/giftifycampus/">
       @giftifycampus
     </a>
   </p>
 
   <p>
-    Order Support:
+    📞 <strong>Order Support:</strong>
     <a href="tel:+918855821377">+91 88558 21377</a>
   </p>
 
   <p>
-    <a href="https://wa.me/918855821377"
-       target="_blank" rel="noopener noreferrer">
+    💬 <a href="https://wa.me/918855821377"
+          target="_blank" rel="noopener noreferrer">
       Chat with us on WhatsApp
     </a>
   </p>
 
   <p>&copy; 2026 Giftify Campus. All rights reserved.</p>
 </div>
+```
 ```<br>© <span id="year"></span> Giftify Campus</p></div></div></footer>
 
 <div class="overlay" id="cartOverlay" onclick="overlayClose(event,'cartOverlay')"><div class="modal"><div class="modal-head"><h2>Your shopping cart</h2><button class="close" onclick="closeModal('cartOverlay')">×</button></div><div id="cartItems"></div><div class="total"><span>Total</span><span id="cartTotal">₹0</span></div><button class="primary full" onclick="openCheckout()">Continue to checkout</button></div></div>
 <div class="overlay" id="checkoutOverlay" onclick="overlayClose(event,'checkoutOverlay')"><div class="modal"><div class="modal-head"><h2>Checkout</h2><button class="close" onclick="closeModal('checkoutOverlay')">×</button></div>
-<div class="notice">This starter website does not verify payments or automatically save orders. Confirm your UPI ID, delivery/collection process, and payment with your customer before fulfilling an order.</div>
+<div class="notice"><p class="notice">
+  This starter website does not verify payments or automatically save orders.
+  Confirm your UPI ID, delivery/collection process, and payment with your customer before fulfilling an order.
+</p>
+</div>
 <form id="orderForm">
 <div class="field"><label for="customerName">Full name *</label><input id="customerName" required autocomplete="name" placeholder="Your name"></div>
 <div class="field"><label for="phone">Mobile number *</label><input id="phone" required inputmode="tel" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number"></div>
