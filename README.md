@@ -47,6 +47,29 @@
 </section>
 <section class="wrap" id="why">
 <div class="section-head"><div><h2>The Giftify promise</h2><p>A simple campus-first gifting experience.</p></div></div>
+  ```html
+<div style="text-align:center; margin-top:35px;">
+  <h3>Meet the Minds Behind Giftify Campus</h3>
+  <p>Where creativity meets meaningful memories.</p>
+
+  <div style="display:flex; justify-content:center; gap:20px;
+              flex-wrap:wrap; margin-top:20px;">
+
+    <div style="background:#fff5f8; padding:20px 30px;
+                border-radius:14px; min-width:180px;">
+      <h4 style="margin:0 0 8px;">Krishna Parik</h4>
+      <p style="margin:0; color:#d65d7a;">Founder</p>
+    </div>
+
+    <div style="background:#fff5f8; padding:20px 30px;
+                border-radius:14px; min-width:180px;">
+      <h4 style="margin:0 0 8px;">Rushika Ghorpade</h4>
+      <p style="margin:0; color:#d65d7a;">Co-Founder</p>
+    </div>
+
+  </div>
+</div>
+```
 <div class="benefits"><div class="benefit"><span style="font-size:27px">💝</span><b>Made personal</b><p>Add a name, photo, or message to make your gift feel truly yours. Confirm custom details before production.</p></div><div class="benefit"><span style="font-size:27px">📦</span><b>Pre-order friendly</b><p>Orders are made after confirmation. Delivery and collection dates should be confirmed with you before payment.</p></div><div class="benefit"><span style="font-size:27px">🔒</span><b>Clear checkout</b><p>Review your products, custom details, delivery information, and total before you place an order.</p></div></div>
 </section>
 </main>
