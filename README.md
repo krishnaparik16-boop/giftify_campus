@@ -1,5 +1,4 @@
-# giftify_campus[giftify_campus_website.html](https://github.com/user-attachments/files/33448681/giftify_campus_website.html)
-<!DOCTYPE html>
+(https://github.com/user-attachments/files/33448681/giftify_campus_website.html)
 <html lang="en">
 <head>
 <meta charset="UTF-8">
