@@ -38,7 +38,7 @@
 </div>
 </section>
 <section class="wrap" id="shop">
-<div class="section-head"><div><h2>Discover your next favourite gift</h2><p>Demo products and prices — edit them to match your actual catalogue.</p></div></div>
+<div class="section-head"><div><h2>Discover your next favourite gift</h2></div></div>
 <div class="filters">
 <button class="filter active" onclick="setCategory('All',this)">All gifts</button><button class="filter" onclick="setCategory('Personalized',this)">Personalized</button><button class="filter" onclick="setCategory('Accessories',this)">Accessories</button><button class="filter" onclick="setCategory('Apparel',this)">Apparel</button><button class="filter" onclick="setCategory('Gifting',this)">Gift hampers</button>
 </div>
