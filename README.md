@@ -1,4 +1,4 @@
-(https://github.com/user-attachments/files/33448681/giftify_campus_website.html)
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
